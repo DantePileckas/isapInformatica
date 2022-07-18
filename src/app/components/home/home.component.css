@@ -78,7 +78,7 @@ color: rgba(0, 0, 0, 0.87);
     }
     
     
-    p, h1, h3{
+    p, h3{
         display: flex;
         justify-content:center;   
     }
@@ -127,4 +127,9 @@ color: rgba(0, 0, 0, 0.87);
         bottom: 86.91%;
     }
     
-   
+   .icono{
+    margin: 0;
+    display:inline-block;
+    height: 40px;
+    float:none;
+   }
