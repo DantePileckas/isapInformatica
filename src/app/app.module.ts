@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { MaterialesComponent } from './components/materiales/materiales.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+
 
 //Rutas
 import {app_routing} from './app.routes';
@@ -27,6 +29,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     NoopAnimationsModule,
     MatGridListModule,
+    MatButtonModule,
     app_routing
   ],
 
