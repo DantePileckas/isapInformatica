@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -8,8 +9,12 @@ import { CursosComponent } from './components/cursos/cursos.component';
 import { MaterialesComponent } from './components/materiales/materiales.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+//Rutas
+import {app_routing} from './app.routes';
+
 //Material Module
 import {MatGridListModule} from '@angular/material/grid-list';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NoopAnimationsModule,
-    MatGridListModule
-
+    MatGridListModule,
+    app_routing
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
