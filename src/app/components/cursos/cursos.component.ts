@@ -23,8 +23,9 @@ export class CursosComponent implements OnInit {
   console.log(this.cursos)  
   }
   
-  verMaterial(){
-    this.router.navigate(['/materiales'])
-  } 
+   verMaterial(idx:number){
+    console.log("id" + idx)
+     this.router.navigate(['/materiales',idx]);
+}
 
 }

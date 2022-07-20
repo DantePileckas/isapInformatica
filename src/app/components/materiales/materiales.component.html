@@ -1,4 +1,5 @@
-
+<!--Funcionamiento correcto: Versión anterios con el uso de Material Services.-->
+<!-- 
   <h1>Material. <small>Accede al material que desees.</small></h1>
 <hr>
 
@@ -10,10 +11,29 @@
         <img [src]="material.img" class="img-fluid" class="mx-auto d-block">
         <div class="card-body">
           <h3 class="card-title">{{material.tittle}}</h3>
-          <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
+          <a [href]='' class="btn btn-primary">Ver más</a>
         </div>
       </div>
 </div> 
     
 
+   -->
+
+  <h1>Material. <small>Accede al material que desees.</small></h1>
+  <hr>
   
+  <br>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/material.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Materiales</h3>
+            <a [href]=curso.linkMaterial class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+  </div> 
+      
+  
+    

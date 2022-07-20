@@ -9,7 +9,7 @@ import { MaterialesComponent } from './components/materiales/materiales.componen
 const APP_ROUTES: Routes=[
 {path:'home', component: HomeComponent},
 {path:'cursos', component: CursosComponent},
-{path:'materiales', component: MaterialesComponent},
+{path:'materiales/:id', component: MaterialesComponent},
 {path:"**", pathMatch:'full',redirectTo:''}
 ];
 

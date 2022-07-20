@@ -6,7 +6,7 @@
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col" *ngFor="let curso of cursos ; let i=index">
-        <button (click)="verMaterial()" mat-raised-button
+        <button (click)="verMaterial(i)" mat-raised-button
         matTooltip="Info about the action"
         aria-label="Button that displays a tooltip when focused or hovered over">
         <h5>{{curso.name}}</h5>

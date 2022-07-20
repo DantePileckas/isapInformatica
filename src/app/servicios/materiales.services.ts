@@ -10,32 +10,26 @@ export class MaterialesServices {
         {
           img:"assets/img/material.png",
           tittle:"Apuntes",
-          link:""
         },
         {
             img:"assets/img/video.png",
             tittle:"Clases Grabadas",
-            link:""
           },
         {
             img:"assets/img/planificacion.png",
             tittle:"Planificación",
-            link:""
           },
         {
             img:"assets/img/notas.png",
             tittle:"Notas",
-            link:""
           },      
         {
             img:"assets/img/horarios.png",
             tittle:"Horarios",
-            link:""
           },      
          {
             img:"assets/img/test.png",
             tittle:"Trabajos Prácticos",
-            link:""
           },      
 
       ];
@@ -49,7 +43,6 @@ export class MaterialesServices {
     export interface Material{
       img: String;
       tittle:String;
-      link:String;
   }
 
 
