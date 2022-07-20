@@ -1,5 +1,5 @@
 
-  <h1>Cursos. <small>Elija el curso al cual pertenece</small></h1>
+  <h1>Material. <small>Accede al material que desees.</small></h1>
 <hr>
 
 <br>
@@ -7,10 +7,10 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col" *ngFor="let material of materiales ; let i=index">
       <div class="card" style="width: 18rem;">
-        <img [src]="material.img">
+        <img [src]="material.img" class="img-fluid" class="mx-auto d-block">
         <div class="card-body">
-          <h5 class="card-title">{{material.tittle}}</h5>
-          <a href="#" class="btn btn-primary">Ver más</a>
+          <h3 class="card-title">{{material.tittle}}</h3>
+          <!-- <a href="#" class="btn btn-primary">Ver más</a> -->
         </div>
       </div>
 </div> 
