@@ -3,62 +3,15 @@
 
 <br>
 
+
 <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+    <div class="col" *ngFor="let curso of cursos ; let i=index">
         <button mat-raised-button
         matTooltip="Info about the action"
         aria-label="Button that displays a tooltip when focused or hovered over">
-        2SH
+        <h5>{{curso.name}}</h5>
         </button>
     </div>
     
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        3SH
-        </button>
-    </div>
-    
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        3EA
-        </button>
-    </div>
-
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        4SH
-        </button>
-    </div>
-
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        4EA
-        </button>
-    </div>
-
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        5SH
-        </button>
-    </div>
-
-    <div class="col">
-        <button mat-raised-button
-        matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
-        5EA
-        </button>
-    </div>
-
   </div>
   

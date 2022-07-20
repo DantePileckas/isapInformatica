@@ -14,6 +14,12 @@ import {MatButtonModule} from '@angular/material/button';
 //Rutas
 import {app_routing} from './app.routes';
 
+
+//Services
+import {CursosServices} from'./servicios/cursos.services';
+import {MaterialesServices} from'./servicios/materiales.services';
+
+
 //Material Module
 import {MatGridListModule} from '@angular/material/grid-list';
 import { RouterModule } from '@angular/router';
@@ -33,7 +39,10 @@ import { RouterModule } from '@angular/router';
     app_routing
   ],
 
-  providers: [],
+  providers: [
+    CursosServices,
+    MaterialesServices
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
