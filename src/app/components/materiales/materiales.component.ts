@@ -30,6 +30,7 @@
 import { Component} from '@angular/core';
 import {CursosServices} from 'src/app/servicios/cursos.services';
 import { ActivatedRoute } from '@angular/router';
+import { Material, MaterialesServices } from 'src/app/servicios/materiales.services';
 
 @Component({
   selector: 'app-materiales',
@@ -37,15 +38,21 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./materiales.component.css']
 })
 export class MaterialesComponent {
+  materiales:Material[]=[];
   curso:any={
 
   }
 
-  constructor(private _cursosServieces:CursosServices,
+  constructor(private _materialesServieces:MaterialesServices,
+              private _cursosServieces:CursosServices,
               private activateRoute:ActivatedRoute ) { 
                 this.activateRoute.params.subscribe((params:any) =>{
                 this.curso = this._cursosServieces.getCurso(params['id'])
               }) }
 
-
+              ngOnInit(): void {
+                     this.materiales=this._materialesServieces.getMaterial();
+                     }
+                
 }
+

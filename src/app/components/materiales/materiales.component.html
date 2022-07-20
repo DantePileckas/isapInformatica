@@ -19,7 +19,7 @@
 
    -->
 
-  <h1>Material. <small>Accede al material que desees.</small></h1>
+  <h1>{{curso.name}} <small>Accede al material que desees.</small></h1> 
   <hr>
   
   <br>
@@ -33,7 +33,57 @@
             <a [href]=curso.linkMaterial class="btn btn-primary">Ver más</a>
           </div>
         </div>
-  </div> 
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/video.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Clases Grabadas</h3>
+            <a [href]=curso.linkClasesGrabadas class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/planificacion.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Cronograma</h3>
+            <a [href]=curso.linkPlanificacion class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/notas.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Notas</h3>
+            <a [href]=curso.linkNotas class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/horarios.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Días y Horarios</h3>
+            <a [href]=curso.linkHorarios class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src='/assets/img/test.png' class="img-fluid" class="mx-auto d-block">
+          <div class="card-body">
+            <h3 class="card-title">Trabajos Prácticos</h3>
+            <a [href]=curso.linkTrabajosPracticos class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
       
-  
-    
