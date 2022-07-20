@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Curso, CursosServices } from 'src/app/servicios/cursos.services';
-
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -12,7 +12,9 @@ import { Curso, CursosServices } from 'src/app/servicios/cursos.services';
 export class CursosComponent implements OnInit {
    cursos:Curso[]=[];
 
-  constructor(private _cursosServices:CursosServices) { 
+  constructor(private _cursosServices:CursosServices,
+              private router:Router) { 
+
     console.log("constructor")
   }
 
@@ -21,4 +23,8 @@ export class CursosComponent implements OnInit {
   console.log(this.cursos)  
   }
   
+  verMaterial(){
+    this.router.navigate(['/materiales'])
+  } 
+
 }
