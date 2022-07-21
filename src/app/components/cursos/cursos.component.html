@@ -1,3 +1,6 @@
+<meta charset="UTF-8">
+
+
 <h1>Cursos. <small>Elija el curso al cual pertenece</small></h1>
 <hr>
 
@@ -8,7 +11,7 @@
     <div class="col" *ngFor="let curso of cursos ; let i=index">
         <button (click)="verMaterial(i)" mat-raised-button
         matTooltip="Info about the action"
-        aria-label="Button that displays a tooltip when focused or hovered over">
+        aria-label="Button that displays a tooltip when focused or hovered over" class="btn btn-primary">
         <h5>{{curso.name}}</h5>
         </button>
     </div>

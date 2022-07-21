@@ -32,6 +32,18 @@ color: rgba(0, 0, 0, 0.87);
         width: 160px;
         height: 40px;
         text-align: center;
+        background: #40C4DC;
+    
+        /* Shadow Blue / 4dp */
+
+        box-shadow: 0px 2px 4px #9DC2FF, 0px 4px 8px #C4DAFF;
+        border-radius: 4px;
+    }
+
+    .btn-primary{
+    --bs-btn-bg: #40C4DC;
+    --bs-btn-border-color: #40C4DC;
+    --bs-btn-hover-color: #fff;
     }
 
     .container{
@@ -98,8 +110,12 @@ color: rgba(0, 0, 0, 0.87);
     }
     
    .icono{
-    margin: 0;
+    margin: 10px;
     display:inline-block;
     height: 40px;
     float:none;
+   }
+
+   p{
+    letter-spacing: 0.15px;
    }
