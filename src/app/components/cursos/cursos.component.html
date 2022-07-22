@@ -1,13 +1,10 @@
-<meta charset="UTF-8">
-
-
-<h1>Cursos. <small>Elija el curso al cual pertenece</small></h1>
+<h1>Cursos Isap</h1>
 <hr>
 
 <br>
 
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 animated fadeIn fast">
     <div class="col" *ngFor="let curso of cursos ; let i=index">
         <button (click)="verMaterial(i)" mat-raised-button
         matTooltip="Info about the action"
